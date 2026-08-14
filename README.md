@@ -1,5 +1,6 @@
-# NYC 2025 Yellow Taxi — Data Quality, Mobility & Anomaly Analysis
-
+## NYC-Urban-Mobility-EDA
+### NYC 2025 Yellow Taxi — Data Quality, Mobility & Anomaly Analysis
+#### Multidimensional Urban Mobility & Financial EDA
 End-to-end analysis of 12 months (48.7M raw trips) of NYC Yellow Taxi records: data
 quality auditing, mobility and demand patterns, financial and payment behavior,
 geospatial concentration, and statistical anomaly detection — consolidated into a
@@ -51,6 +52,11 @@ in Notebook 06, Section 8.
 ├── requirements.txt
 └── README.md
 ```
+
+## Rendered HTML Notebooks
+
+The `rendered_html_notebooks/` folder contains the **executed HTML versions of the Jupyter notebooks**, allowing you to view the complete analysis, outputs, and visualizations directly without running the workflow yourself.
+For **full project replication**, follow the procedures and setup instructions provided in the sections below.
 
 ## How to run
 
