@@ -1,12 +1,12 @@
-## NYC-Urban-Mobility-EDA
-### NYC 2025 Yellow Taxi — Data Quality, Mobility & Anomaly Analysis
-#### Multidimensional Urban Mobility & Financial EDA
+## NYC-Urban-Mobility-EDA 🚕
+### NYC 2025 Yellow Taxi 🚖 — Data Quality, Mobility & Anomaly Analysis 
+#### Multidimensional Urban Mobility & Financial EDA 
 End-to-end analysis of 12 months (48.7M raw trips) of NYC Yellow Taxi records: data
 quality auditing, mobility and demand patterns, financial and payment behavior,
 geospatial concentration, and statistical anomaly detection — consolidated into a
 single analytical narrative with business recommendations.
 
-## What this project does
+## What this project does 🔍
 
 Six notebooks, run in order, take raw monthly TLC trip files to a final,
 cross-validated set of findings:
@@ -20,7 +20,7 @@ cross-validated set of findings:
 | 05 | `geospatial_mobility_analysis.ipynb` | Where demand concentrates: pickup/dropoff hotspots, origin-destination flows, zone-level economics, weekday/weekend zone mix. |
 | 06 | `anomaly_analysis_and_insights.ipynb` | Statistical outlier detection (IQR + multivariate), geographic/temporal clustering of anomalies, and the final cross-notebook Analytical Story. |
 
-**Key results:** 43,921,426 trips after cleaning (90.15% retention); demand peaks in
+📌 **Key results:** 43,921,426 trips after cleaning (90.15% retention); demand peaks in
 May and troughs in August; distance explains only 1.1% of fare variance linearly
 (R² = 0.011) despite a strong monotonic relationship (Spearman ρ = 0.871); Manhattan
 accounts for 86% of pickups; 15.24% of trips are flagged by at least one anomaly rule,
@@ -28,8 +28,7 @@ with airport zones (JFK, LaGuardia) flagged at 90%+ due to a citywide distance
 threshold that doesn't account for legitimately long airport trips. Full findings are
 in Notebook 06, Section 8.
 
-## Repository structure
-
+## 📁 Repository structure
 ```
 ├── notebooks/
 │   ├── 01_data_ingestion_quality.ipynb
@@ -53,12 +52,12 @@ in Notebook 06, Section 8.
 └── README.md
 ```
 
-## Rendered HTML Notebooks
+## Rendered HTML Notebooks 📊
 
 The `rendered_html_notebooks/` folder contains the **executed HTML versions of the Jupyter notebooks**, allowing you to view the complete analysis, outputs, and visualizations directly without running the workflow yourself.
 For **full project replication**, follow the procedures and setup instructions provided in the sections below.
 
-## How to run
+## How to run 🚀
 
 Requires Python >=3.9.
 
@@ -82,7 +81,7 @@ python -m venv venv
 venv\Scripts\activate.bat
 ```
 
-**2. Install dependencies**
+**2.📦 Install dependencies**
 
 ```bash
 pip install -r requirements.txt
@@ -111,13 +110,13 @@ notebook processes one month at a time (load → clean → feature-engineer → 
 discard) rather than holding the full year in memory at once, so no step requires more
 than a few GB of RAM.
 
-**5. Outputs**
+**5.📤 Outputs**
 
 Aggregated CSVs land in `data/processed/`; charts land in `data/outputs/`. Notebook 06
 is the final deliverable — its last section is a self-contained summary of every
 finding across the project.
 
-## Data source
+## Data source 🗃️
 
 NYC TLC Yellow Taxi Trip Records, 2025, published by the NYC Taxi & Limousine
 Commission.
