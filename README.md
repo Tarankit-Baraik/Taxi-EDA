@@ -1,5 +1,6 @@
-# NYC 2025 Yellow Taxi — Data Quality, Mobility & Anomaly Analysis
-
+## NYC-Urban-Mobility-EDA
+### NYC 2025 Yellow Taxi — Data Quality, Mobility & Anomaly Analysis
+#### Multidimensional Urban Mobility & Financial EDA
 End-to-end analysis of 12 months (48.7M raw trips) of NYC Yellow Taxi records: data
 quality auditing, mobility and demand patterns, financial and payment behavior,
 geospatial concentration, and statistical anomaly detection — consolidated into a
